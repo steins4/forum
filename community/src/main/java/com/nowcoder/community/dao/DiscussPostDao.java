@@ -13,4 +13,11 @@ public interface DiscussPostDao {
     //@Param 给参数取别名
     // 如果参数只有一个，并且在《if》里使用，必须加别名
     int selectDiscussPostRows(@Param("userId")int userId);
+
+    int insertDiscussPost(DiscussPost discussPost);
+
+    // 查询帖子详情
+    DiscussPost selectDiscussPostById(int id);
+
+    int updateCommentCount(int id, int commentCount);
 }
