@@ -61,7 +61,7 @@ public class MapperTests {
         System.out.println(userDao.updateStatus(151, 112));
     }
 
-    @Test
+    /*@Test
     public void testSelectPosts() {
         List<DiscussPost> discussPosts = discussPostDao.selectDiscussPosts(101, 0, 100);
         for (DiscussPost discussPost : discussPosts) {
@@ -70,7 +70,7 @@ public class MapperTests {
 
         int rows = discussPostDao.selectDiscussPostRows(101);
         System.out.println(rows);
-    }
+    }*/
 
     @Test
     public void testInsertLoginTicket() {
